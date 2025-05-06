@@ -3,12 +3,12 @@ include "Dependencies.lua"
 
 outputdir = "%{cfg.buildcfg}_%{cfg.platform}_%{cfg.architecture}"
 
-workspace "Barnyard Mod"
+workspace "BarnyardMods"
 	cppdialect "C++20"
 	characterset "ASCII"
 	architecture "x86"
 	
-	startproject "ModExample"
+	startproject "CheatMenu"
 
 	platforms "Windows"
 	configurations { "Debug", "Release", "Final" }
@@ -70,7 +70,7 @@ group "Main"
 	include "OpenBarnyard/Toshi"
 	include "OpenBarnyard/SDK/BYardSDK"
 	include "OpenBarnyard/SDK/BYModCore"
-	include "ModExample"
+	include "CheatMenu"
 	
 group "ThirdParty"
 	-- include "ThirdParty/ImGui"

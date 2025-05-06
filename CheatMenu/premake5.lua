@@ -1,4 +1,4 @@
-project "ModExample"
+project "CheatMenu"
 	kind "SharedLib"
 	language "C++"
 	staticruntime "off"
