@@ -1,11 +1,11 @@
 ﻿# Barnyard Mods
-[OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard) | [Barnyard Launcher](https://github.com/InfiniteC0re/BarnyardLauncher) | [YouTube](https://www.youtube.com/@infc0re) | [Discord](https://discord.gg/3bMq8hWvFX)
+[OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard) | [Barnyard Launcher](https://github.com/InfiniteC0re/BarnyardLauncher) | [Discord](https://discord.gg/3bMq8hWvFX)
 
-A template you can use to set up blank mod projects for Barnyard the video game.
-Requires BYModLoader in order to start the mod.
+My mods made for the video game Barnyard.
+
+Project created for [OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard), using [InfiniteC0re's Mod Template](https://github.com/InfiniteC0re/Barnyard-Mod-Template). Requires BYModLoader to use.
 
 ## Notes
-
 > [!IMPORTANT]
 > **SUPPORT THE DEVELOPERS OF THE TOSHI ENGINE**
 > 
@@ -16,37 +16,30 @@ Requires BYModLoader in order to start the mod.
 > 
 > We do not condone using this project as a means for piracy in any form. This project was made with love and care for the source material and was created for purely educational purposes. 
 
-## Usage Guide
+## Mods
+- **[CheatMenu](https://github.com/Break-Ben/BarnyardMods/tree/main/CheatMenu)** - A cheat/mod menu that gives you access to some traditional game hacks, such as increased speed.
 
-1. Instantiate a new repository from this template
-2. Create OpenBarnyard folder (1) somewhere on your disk
-3. Create Game folder in the previously created directory (1)
-4. Copy original game assets and the BYardModLoader.exe (get it from the Winter Mod or somewhere else) file into the Game folder
-5. Clone your repository, placing it's folder in the OpenBarnyard directory
-6. At this moment the structure should look like this:
+## Installation
+1. Install the [OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard) modloader
+2. Download the DLL of a mod from the [releases](https://github.com/Break-Ben/BarnyardMods/releases) and add it to the `Mods/` directory of OpenBarnyard
+
+## Building
+1. Create an `OpenBarnyard/` folder
+2. Create a `Game/` folder in `OpenBarnyard/`
+3. Copy original game files, `Bahnschrift.ttf` and the `BYardModLoader.exe` (get it from the Winter Mod or somewhere else) file into `Game/`
+4. Clone this repository into `OpenBarnyard/`
+5. At this moment the structure should look like this:
 
     ```
     .
     └── OpenBarnyard/
         ├── Game/
-        │   ├── Data
-        │   ├── Saves
         │   ├── BYardModLoader.exe
+        │   ├── Bahnschrift.ttf
+        │   ├── Barnyard.exe
         │   └── ...
-        └── YourRepositoryName
+        └── BarnyardMods/
     ```
-7. CD into your repository folder
-8. Execute `GenerateProjects-WIN-VS2022.bat` in order to generate file projects
-9. Open the generated solution file
-
-## Ghidra Repository
-
-In case you want to find some specific method to hook/call it or learn something about how the game (or the engine) works, you can use our Ghidra repository where the game is being reverse engineered.
-
-```
-Version:  11.3.2
-File:     Barnyard/Barnyard (Windows)
-Hostname: repository.opentoshi.net
-Username: guest
-Password: guest1
-```
+6. CD into `BarnyardMods/`
+7. Run `GenerateProjects-WIN-VS2022.bat` to generate file projects
+8. Open the generated solution file
