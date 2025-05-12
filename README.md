@@ -17,18 +17,18 @@ Project created for [OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard)
 > We do not condone using this project as a means for piracy in any form. This project was made with love and care for the source material and was created for purely educational purposes. 
 
 ## Mods
-- **[CheatMenu](https://github.com/Break-Ben/BarnyardMods/tree/main/CheatMenu)** - A cheat/mod menu that gives you access to some traditional game hacks, such as increased speed.
+- **[CheatMenu](https://github.com/Break-Ben/BarnyardMods/tree/main/CheatMenu)** - A cheat/mod menu that gives you access to some traditional game hacks, such as increased movement speed.
 
 ## Installation
-1. Install the [OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard) modloader
-2. Download the DLL of a mod from the [releases](https://github.com/Break-Ben/BarnyardMods/releases) and add it to the `Mods/` directory of OpenBarnyard
+1. Install the [OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard) modloader (WIP)
+2. Download the DLL of a mod from the [releases](https://github.com/Break-Ben/BarnyardMods/releases) and add it to the `Mods/` directory of your OpenBarnyard installation
 
 ## Building
 1. Create an `OpenBarnyard/` folder
 2. Create a `Game/` folder in `OpenBarnyard/`
 3. Copy original game files, `Bahnschrift.ttf` and the `BYardModLoader.exe` (get it from the Winter Mod or somewhere else) file into `Game/`
 4. Clone this repository into `OpenBarnyard/`
-5. At this moment the structure should look like this:
+5. The structure should look like this:
 
     ```
     .
@@ -41,5 +41,5 @@ Project created for [OpenBarnyard](https://github.com/InfiniteC0re/OpenBarnyard)
         └── BarnyardMods/
     ```
 6. CD into `BarnyardMods/`
-7. Run `GenerateProjects-WIN-VS2022.bat` to generate file projects
+7. Run `GenerateProjects-WIN-VS2022.bat` to generate project files
 8. Open the generated solution file
